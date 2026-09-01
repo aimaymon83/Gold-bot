@@ -24,9 +24,9 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           ALERT_TO: ${{ secrets.ALERT_TO }}
-          GOLD_THRESHOLD_USD: "20"
+          GOLD_THRESHOLD_USD: "50"
           GOLD_WINDOW_MINUTES: "10"
-          ALERT_COOLDOWN_MINUTES: "30"
+          ALERT_COOLDOWN_MINUTES: "0"
         run: python gold_alert.py
 
       - name: Commit cooldown state
