@@ -24,7 +24,7 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           ALERT_TO: ${{ secrets.ALERT_TO }}
-          GOLD_THRESHOLD_USD: "0.1"
+          GOLD_THRESHOLD_USD: "20"
           GOLD_WINDOW_MINUTES: "10"
           ALERT_COOLDOWN_MINUTES: "30"
         run: python gold_alert.py
